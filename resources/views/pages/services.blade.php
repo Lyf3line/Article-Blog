@@ -7,8 +7,8 @@
         <title>{{config('app.name', 'Uren registratie')}}</title>
     </head>
     <body>
-        <h1>About</h1>
-        <p>About page</p>
+        <h1>Services</h1>
+        <p>Service page</p>
 
 
     </body>
