@@ -1,1 +1,1 @@
-Uren registratie migrate from another framework to Laravel.
+A blog application made with laravel, you can add/update/edit posts on the website.
