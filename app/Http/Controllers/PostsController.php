@@ -15,7 +15,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $posts = Post::orderBy('title', 'asc')->get();
+        $posts = Post::orderBy('created_at', 'desc')->get();
         return view('posts.index')->with('posts', $posts);
 
         //$posts = Post::orderBy('title', 'asc')->paginate(5);
@@ -47,6 +47,14 @@ class PostsController extends Controller
             'title' => 'required',
             'body' => 'required'
         ]);
+
+        //create post
+        $post = new Post;
+        $post->title = $request->input('title');
+        $post->body = $request->input('body');
+        $post->save();
+
+        return redirect('/posts')->with('success', 'Post created!');
     }
 
     /**

@@ -18,8 +18,11 @@
         <a class="nav-link" href="/posts">Blog</a>
       </li>
     </ul>
-    <span class="navbar-text">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/posts/create">Create post</a></li>
+    </ul>
+    {{-- <span class="navbar-text">
       -
-    </span>
+    </span> --}}
   </div>
 </nav>
